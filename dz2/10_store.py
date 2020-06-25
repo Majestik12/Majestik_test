@@ -43,6 +43,38 @@ lamps_price = lamps_item['price']
 lamps_cost = lamps_quantity * lamps_price
 print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
 
+tables_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price']
+tables_code = goods['Стол']
+tables_item = store[tables_code][0]
+tables_quantity = tables_item['quantity']
+tables_cost2 = store[goods['Стол']][1]['quantity'] * store[goods['Стол']][1]['price']
+tables_code2 = goods['Стол']
+tables_item2 = store[tables_code2][1]
+tables_quantity2 = tables_item2['quantity']
+print('Стол -', tables_quantity + tables_quantity2, 'шт, стоимость', tables_cost + tables_cost2, 'руб')
+
+sofas_code = goods['Диван']
+sofas_item = store[sofas_code][0]
+sofas_item2 = store[sofas_code][1]
+sofas_quantity = sofas_item['quantity']
+sofas_quantity2 = sofas_item2['quantity']
+sofas_price = sofas_item['price']
+sofas_price2 = sofas_item2['price']
+sofas_cost = sofas_quantity * sofas_price + sofas_quantity2 * sofas_price2
+print('Диван -', sofas_quantity + sofas_quantity2, 'шт, стоимость', sofas_cost, 'руб')
+
+chairs_code = goods['Стул']
+chairs_item = store[chairs_code][0]
+chairs_item2 = store[chairs_code][1]
+chairs_item3 = store[chairs_code][2]
+chairs_quantity = chairs_item['quantity']
+chairs_quantity2 = chairs_item2['quantity']
+chairs_quantity3 = chairs_item3['quantity']
+chairs_price = chairs_item['price']
+chairs_price2 = chairs_item2['price']
+chairs_price3 = chairs_item3['price']
+chairs_cost = chairs_quantity * chairs_price + chairs_quantity2 * chairs_price2 + chairs_quantity3 * chairs_price3
+print('Стул -', chairs_quantity + chairs_quantity2 + chairs_quantity3, 'шт, стоимость', chairs_cost, 'руб')
 # Вывести стоимость каждого товара на складе: один раз распечать сколько всего столов, стульев и т.д. на складе
 # Формат строки <товар> - <кол-во> шт, стоимость <общая стоимость> руб
 
@@ -57,9 +89,3 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # и оформить попытку сдачи ДЗ! Без этого ДЗ не будет проверяться!                        #
 # Как оформить попытку сдачи смотрите видео - https://youtu.be/qVpN0L-C3LU               #
 ##########################################################################################
-
-
-
-
-
-
