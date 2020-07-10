@@ -1,8 +1,8 @@
 while True:
     user_input = input('Введите 42 >> ')
     result = int(user_input)
-    if result == 42:
+    if result == 44:
         print('Спасибо за сотрудничество!')
         break
     else:
-        print('Я просил 43, а Вы ввели', result, 'Попробуйте еще раз...')
+        print('Я просил 44, а Вы ввели', result, 'Попробуйте еще раз...')
