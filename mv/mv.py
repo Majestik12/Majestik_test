@@ -1,5 +1,5 @@
 while True:
-    user_input = input('Введите 42 >> ')
+    user_input = input('Введите 44 >> ')
     result = int(user_input)
     if result == 42:
         print('Спасибо за сотрудничество!')
