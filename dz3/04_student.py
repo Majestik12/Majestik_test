@@ -10,5 +10,13 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
-
-# TODO здесь ваш код
+poprosit = 0
+monats = 10
+while monats > 0:
+    if monats == 10:
+        poprosit += expenses - educational_grant
+    else:
+        expenses += expenses * 0.03
+        poprosit += expenses - educational_grant
+    monats -= 1
+print('Студенту нужно попросить %s рублей' % poprosit)
