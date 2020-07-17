@@ -46,10 +46,17 @@ store = {
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
 
-# TODO здесь ваш код
-
-
-
-
-
+#
+for tovar in goods:
+    kolvo = 0
+    obstoim = 0
+    tovar_code = goods[tovar]
+    tovar_item = store[tovar_code]
+    for sklad in tovar_item:
+        quantity1 = sklad['quantity']
+        prise1 = sklad['price']
+        stoimosti = prise1 * quantity1
+        kolvo += quantity1
+        obstoim += stoimosti
+    print('%s - %s шт, стоимость %s руб' % (tovar, kolvo, obstoim))
 
