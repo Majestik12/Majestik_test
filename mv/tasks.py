@@ -27,3 +27,10 @@ for d in (dict_a, dict_b, dict_c):
 print(result)
 print('Пятое')
 my_dict = {'a': 500, 'b': 5874, 'c': 560, 'd': 400, 'e': 5874, 'f': 20}
+m = dict(sorted (my_dict.items(), key=operator.itemgetter(1)))
+a = 3
+for c in m:
+    print (m)
+    a -= 1
+    if a == 0:
+        break
