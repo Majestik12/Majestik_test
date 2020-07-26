@@ -20,7 +20,7 @@ paper_x, paper_y = 6, 8
 # paper_x, paper_y = 9, 11
 # (просто раскоментировать нужную строку и проверить свой код)
 
-# TODO здесь ваш код
+#
 if paper_x <= envelop_x and paper_y <= envelop_y:
     print('Da')
 elif paper_y <= envelop_x and paper_x <= envelop_y:
@@ -55,7 +55,7 @@ brick_x, brick_y, brick_z = 11, 10, 2
 # brick_x, brick_y, brick_z = 3, 11, 6
 # (просто раскоментировать нужную строку и проверить свой код)
 
-# TODO здесь ваш код
+
 if hole_x >= brick_x and hole_y >= brick_y:
     print('Da')
 elif hole_x >= brick_y and hole_y >= brick_x:
