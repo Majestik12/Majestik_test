@@ -26,3 +26,4 @@ for d in (dict_a, dict_b, dict_c):
     result.update(d)
 print(result)
 print('Пятое')
+my_dict = {'a': 500, 'b': 5874, 'c': 560, 'd': 400, 'e': 5874, 'f': 20}
